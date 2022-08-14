@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: hsl(229, 57%, 11%);
+  background-image: url(./images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+/* container left open */
+
+.container-left {
+  width: 360px;
+  height: 200px;
+  background: hsl(228, 56%, 26%);
+  padding: 40px;
+  margin: 30px;
+  border: none;
+  border-radius: 8px 120px 8px 8px;
+  align-items: left;
+  text-align: left;
+  justify-content: left;
+}
+
+.container-left-icons {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  text-align: center;
+  justify-content: left;
+  gap: 10px;
+}
+.container-icon1 {
+  width: 48px;
+  height: 48px;
+  background: hsl(229, 57%, 11%);
+  border: none;
+  border-radius: 12px;
+  position: relative;
+}
+.container-icon2 {
+  width: 48px;
+  height: 48px;
+  background: hsl(229, 57%, 11%);
+  border: none;
+  border-radius: 12px;
+  position: relative;
+}
+.container-icon3 {
+  width: 48px;
+  height: 48px;
+  background: hsl(229, 57%, 11%);
+  border: none;
+  border-radius: 12px;
+  position: relative;
+}
+
+.container-icon1 img {
+  position: absolute;
+  top: 22%;
+  left: 30%;
+}
+.container-icon2 img {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+}
+.container-icon3 img {
+  position: absolute;
+  top: 35%;
+  left: 25%;
+}
+
+/* container left close */
+
+/* container right open */
+
+.container-right {
+  width: 550px;
+  height: 150px;
+  background: hsl(228, 56%, 26%);
+  border: none;
+  border-radius: 10px;
+  padding: 40px;
+  margin: 80px;
+  position: relative;
+  right: 6%;
+}
+.container-right p {
+  color: hsl(243, 100%, 93%);
+  font-weight: 400;
+}
+.container-right span {
+  color: hsl(243, 100%, 93%);
+  font-weight: 700;
+}
+
+.container-right-line {
+  margin: 10px 10px 0 25px;
+  width: 100%;
+  height: 20px;
+  border: 3px solid hsl(229, 57%, 11%);
+  border-radius: 20px;
+  background-color: hsl(229, 57%, 11%);
+  position: relative;
+  right: 5%;
+}
+
+.container-middle {
+  border-radius: 20px;
+  width: 80%;
+  height: 14px;
+  background-image: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+  position: relative;
+}
+
+.middle-white {
+  background-color: white;
+  width: 12px;
+  height: 12px;
+  border: none;
+  border-radius: 30px;
+  position: absolute;
+  left: 96%;
+  bottom: 3%;
+}
+.container-right-span {
+  display: flex;
+  color: hsl(243, 100%, 93%);
+  font-weight: 700;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.container-white {
+  width: 150px;
+  height: 70px;
+  border: 1px solid hsl(229, 57%, 11%);
+  background: white;
+  padding: 10px;
+  display: flex;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px 10px 0 10px;
+  position: absolute;
+  right: 17%;
+  top: 12%;
+}
+.container-white span {
+  color: hsl(229, 57%, 11%);
+  font-size: 36px;
+  font-weight: 700;
+}
+.container-white p {
+  color: hsl(229, 7%, 55%);
+  font-weight: 700;
+  font-size: 12px;
+  opacity: 1;
+  margin-left: 8px;
+}
+.container-white::after {
+  content: "";
+  border-top: 36px solid white;
+  border-left: 36px solid transparent;
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+}
+
+/* responsividade */
+
+@media screen and (max-width: 375px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-image: url(./images/bg-mobile.png);
+    background-size: cover;
+    background-position: no-repeat;
+  }
+  .container {
+    width: 330px;
+    height: 500px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-left {
+    width: 340px;
+    height: 200px;
+  }
+  .container-right {
+    width: 340px;
+    height: 200px;
+    position: relative;
+    bottom: 90px;
+    left: 0.5px;
+  }
+  .container-white {
+    width: 150px;
+    height: 70px;
+    border: 1px solid hsl(229, 57%, 11%);
+    background: white;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    position: absolute;
+    left: 80px;
+    top: 340px;
+  }
+  .container-white::after {
+    display: none;
+  }
+}
